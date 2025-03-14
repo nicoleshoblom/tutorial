@@ -1,4 +1,6 @@
 ---
+import Footer from '../components/Footer.astro';
+import Navigation from '../components/navigation.astro'
 import '../styles/global.css'
 
 const pageTitle = "Nicole Shoblom";
@@ -16,9 +18,7 @@ const finished = false;
 const goal = 3;
 const skillColor="navy";
 ---
-<a href="/">Home</a>
-<a href="/about/">About</a>
-<a href="/blog/">Blog</a>
+
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -38,6 +38,7 @@ const skillColor="navy";
           </style>
 	</head>
 	<body>
+        <Navigation />
 		<h1>{pageTitle}</h1>
 		<h1>Looking for all opportunities to build tech, especially if that tech needs data or uses data in some way! What happens if i write some more<h1></h1>
         <p>Here are a few facts about me:</p>
@@ -58,5 +59,6 @@ const skillColor="navy";
 
         {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
         </ul>
+        <Footer />
     </body>
 </html>
