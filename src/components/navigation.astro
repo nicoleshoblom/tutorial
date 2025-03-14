@@ -1,5 +1,15 @@
 ---
+import Hamburger from './hamburger.astro';
 ---
+<style>
+    .nav-links {
+      display: none;
+    }
+    .nav-links.expanded {
+      display: block;
+    }
+</style>
+<Hamburger />
 <div class="nav-links">
     <a href="/">Home</a>
     <a href="/about/">About</a>
